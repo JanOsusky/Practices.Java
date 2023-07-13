@@ -1,0 +1,15 @@
+import jarras.Jarra;
+import jarras.Mesa;
+
+
+public class EjemploUsoJarras1 {
+	public static void main(String[] args)
+	{
+		
+		
+		Mesa mesa = new Mesa(7,5);
+		
+		System.out.println(mesa);
+
+	}
+}

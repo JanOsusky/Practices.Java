@@ -1,0 +1,28 @@
+package jarras;
+
+import javax.management.RuntimeErrorException;
+
+public class Mesa {
+	
+	private Jarra jarra1, jarra2;
+	
+	public Mesa(Jarra j1, Jarra j2)
+	{
+		jarra1 = j1;
+		jarra2 = j2;
+	}
+	
+	public Mesa(int cap1, int cap2)
+	{
+		jarra1 = new Jarra(cap1);
+		jarra2 = new Jarra(cap2);
+	}
+	
+	public int capacidad(int i)
+	{
+		if(i!=1 && i!=2)
+			throw new RuntimeException("La jarra de ser 1 o 2");
+		return i == 1 ? jarra1.capacidad() : jarra2.capacidad(); 
+	}
+	
+}

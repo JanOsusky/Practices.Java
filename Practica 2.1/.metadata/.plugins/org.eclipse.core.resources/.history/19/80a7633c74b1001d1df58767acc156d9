@@ -1,0 +1,13 @@
+import jarras.Jarra;
+import jarras.Mesa;
+
+
+public class EjemploUsoJarras1 {
+	public static void main(String[] args)
+	{
+		Jarra miJarra = new Jarra(7);
+		
+		
+		System.out.println("La jarra es: " + miJarra);
+	}
+}
